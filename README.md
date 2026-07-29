@@ -1,4 +1,4 @@
-# NITMB_ARG_Inference
+# Benchmarking SINGER ARG Reconstruction 
  I benchmark SINGER ([`singer-snakemake`](https://github.com/nspope/singer-snakemake)) across ten different demographic models, ranging from one to sixteen subpopulations and including size changes such as bottlenecks and exponential growth. Each model is simulated using the msprime engine. For each scenario, SINGER reconstructs 50 plausible tree sequences from the simulated VCF output. Pairwise coalescent rates are used to compare these reconstructed tree sequences against the ground-truth tree sequence. 
 
 
