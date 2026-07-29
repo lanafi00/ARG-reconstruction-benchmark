@@ -48,7 +48,7 @@ repo. Clone it separately, then use the configs and scripts here on top of it.
    To run SINGER on all models on the cluster as a SLURM array (adjusting source and file paths as necessary):
 
 ```bash
-   sbatch --array=0-9 <path-to>/NITMB_ARG_Inference/cluster/singer_submission.sl
+   sbatch --array=0-9 <path-to>/ARG-reconstruction-benchmark/cluster/singer_submission.sl
 ```
 
 3. **Plot ground truth vs reconstructions** — for each model, compare the reconstructed tree sequences 
