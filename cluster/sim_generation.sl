@@ -14,4 +14,4 @@ mkdir -p logs
 
 source /apps/software/gcc-12.1.0/miniconda3/24.9.2/etc/profile.d/conda.sh
 conda activate singer-snakemake-env
-python ../scripts/official_sim_gen2.py $SLURM_ARRAY_TASK_ID
+python official_sim_gen2.py $SLURM_ARRAY_TASK_ID
