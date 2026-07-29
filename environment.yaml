@@ -1,0 +1,12 @@
+name: singer-snakemake-env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python>=3.11
+  - pip
+  - pip:
+    - -r requirements.txt
+
+
+
