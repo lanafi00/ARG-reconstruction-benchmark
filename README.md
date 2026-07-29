@@ -40,10 +40,10 @@ repo. Clone it separately, then use the configs and scripts here on top of it.
 2. **Run SINGER** — from inside the `singer-snakemake` directory, point Snakemake 
    at the relevant config from this repo (optionally using Polegon):
 ```bash
-   snakemake --cores=20 --configfile=<path-to>/NITMB_ARG_Inference/config/polegon/<model>_config.yaml
+   snakemake --cores=20 --configfile=<path-to>/ARG-reconstruction-benchmark/config/polegon/<model>_config.yaml
 ```
 ```bash
-   snakemake --cores=20 --configfile=<path-to>/NITMB_ARG_Inference/config/no_polegon/<model>_config.yaml
+   snakemake --cores=20 --configfile=<path-to>/ARG-reconstruction-benchmark/config/no_polegon/<model>_config.yaml
 ```
    To run SINGER on all models on the cluster as a SLURM array (adjusting source and file paths as necessary):
 
