@@ -23,4 +23,6 @@ source /apps/software/gcc-12.1.0/miniconda3/24.9.2/etc/profile.d/conda.sh
 source /apps/software/gcc-12.1.0/miniconda3/24.9.2/etc/profile.d/mamba.sh
 
 mamba activate singer-snakemake-env
-snakemake  --cores=20 --rerun-incomplete --configfile=config/${scenario}_config.yaml
+snakemake  --cores=20 --rerun-incomplete --configfile=../config/polegon/${scenario}_config.yaml
+
+# Alternative config: --configfile=../config/no_polegon/${scenario}_config2.yaml
