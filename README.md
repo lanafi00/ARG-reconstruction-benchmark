@@ -38,7 +38,7 @@ repo. Clone it separately, then use the configs and scripts here on top of it.
 ```
 
 2. **Run SINGER** — from inside the `singer-snakemake` directory, point Snakemake 
-   at the relevant config from this repo (optionally using Polegon):
+   at the relevant config from this repo (to rerun without POLEGON, swap the "polegon" directory for "no_polegon"):
 ```bash
    snakemake --cores=20 --configfile=<path-to>/ARG-reconstruction-benchmark/config/polegon/<model>_config.yaml
 ```
@@ -52,17 +52,17 @@ repo. Clone it separately, then use the configs and scripts here on top of it.
 ```
 
 3. **Plot ground truth vs reconstructions** — for each model, compare the reconstructed tree sequences 
-   against the ground truth tree sequence by plotting pairwise coalescence rates, counts, and proportions:
+   against the ground truth tree sequence by plotting pairwise coalescence rates, counts, and proportions (these plotting scripts assume that the SINGER reconstructions have already been run both with and without POLEGON):
 
 ```bash
-   python plotting/polegon/make_plots4.py
+   python plotting/make_plots_original.py
 ```
   Model-specific plotting scripts create additional plots comparing within-population and between-population statistics.
   
 ```bash
-   python plotting/polegon/population_comparison/make_plots_ooa.py
-   python plotting/polegon/population_comparison/make_plots_step.py
-   python plotting/polegon/population_comparison/make_plots_split.py
+   python plotting/population_comparison/make_plots_ooa.py
+   python plotting/population_comparison/make_plots_step.py
+   python plotting/population_comparison/make_plots_split.py
 ```
    Adjust file paths to SINGER's output as necessary. 
  
